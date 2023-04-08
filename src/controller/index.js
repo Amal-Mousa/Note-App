@@ -1,3 +1,4 @@
 const { getNotesController } = require('./note');
+const { postNotesController } = require('./note');
 
-module.exports = { getNotesController };
+module.exports = { getNotesController, postNotesController };
