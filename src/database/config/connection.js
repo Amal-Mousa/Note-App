@@ -3,7 +3,7 @@ const { Pool } = require('pg');
 
 const { NODE_ENV, DB_URL, DEV_DB_URL } = process.env;
 
-let dbUrl = '';
+let dbUrl;
 if (NODE_ENV === 'production') {
   dbUrl = DB_URL;
 } else if (NODE_ENV === 'development') {
